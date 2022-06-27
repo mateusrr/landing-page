@@ -1,0 +1,310 @@
+:root {
+    --blue: #4169E1;
+    --white: #fff;
+    --blue2: #030b24;
+    --green: #04caa9;
+    --black: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+div > img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    filter:invert();
+}
+
+.container {
+    background: linear-gradient(#56b0ff, #4169E1);
+    display: block;
+    margin: auto;
+    padding: 2rem 2rem 5.2rem 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    position: relative;
+}
+
+nav {
+    list-style: none;
+}
+
+.close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: none;
+}
+
+.menu {
+    transform: translateX(0);
+}
+
+ul.menu ~ li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+li a:hover {
+    color: rgba(231, 191, 241);
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-left {
+    color: var(--white);
+    width: 50%;
+    padding: 1  4.7px;
+}
+
+.main-left h1 {
+    font-size: 4.2rem;
+    font-weight: lighter;
+}
+
+.main-left p {
+    font-size: 22px;
+    margin: 40px 0;
+}
+
+.main-left-btn button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    background: var(--green);
+    color: var(--white);
+}
+
+.info {
+    color: var(--black);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: var(--white);
+}
+
+#about-we p {
+    max-width: 890px;
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.backToTop {
+    background: var(--white);
+    position: fixed;
+    text-decoration: none;
+    right: 1px;
+    bottom: 7px;
+    display: block;
+    font-weight: 500;
+    padding: 8px 6px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 3px;
+    border-radius: 20px;
+    background: var(--green);
+    color: var(--white);
+}
+
+#services {
+    background: #f4f6fc;
+}
+
+.title-services {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.plain {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5rem;
+    padding-bottom: 5rem;
+}
+
+.plain1, .plain2, .plain3 {
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 30px;
+    width: 20%;
+    height: 27rem;
+}
+
+.dt-plain {
+    border-bottom: 1px solid;
+    height: 7vh;
+    font-weight: 700;
+    text-align: center;
+}
+
+.plain dd {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    height: 3vh;
+    margin: 3vh;
+}
+
+.plain .inscrevaSe a {
+    text-decoration: none;
+    background: var(--green);
+    display: inline-block;
+    font-weight: 700;
+    width: 27vh;
+    height: 7vh;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white);
+    font-size: 5vh;
+}
+
+.plain .valorPlano {
+    display: inline-flexbox;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+    font-size: 8vh;
+    margin-bottom: 10vh;
+}
+
+.saibaMais a {
+    text-decoration: none;
+    color: var(--blue2);
+    transform: translateX(0);
+    font-size: 17px;
+    font-weight: 500;
+
+}
+/*
+.privileges {
+    background: #4169E1;
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    width: 62%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.class-privilegesES {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
+
+.privilegesFree {
+    width: 100%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.privilegesPremium {
+    width: 20%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+
+}*/
+
+
+#contato {
+    padding-top: 1rem;
+    background:var(--blue);
+    align-items: center;
+    text-align: center;
+}
+
+#contato > li {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-size: 30px;
+}
+
+a > img {
+    width: 30px;
+    display: inline-block;
+    margin: 1rem;
+}
+
+tfooter > img {
+    width: 10rem;
+    margin: 0.5rem;
+}
+
+tfooter {
+    background: var(--blue);
+    color: var(--white);
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.main-right {
+    display: flex;
+    width: 50%;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+/*Responsivo*/
+@media (max-width: 768px) {
+
+}
