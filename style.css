@@ -305,6 +305,12 @@ tfooter {
 }
 
 /*Responsivo*/
-@media (max-width: 768px) {
-
+@media (max-width: 814px) {
+    .main-right {
+        display: none;
+    }
+    .main-left {
+        display: flex;
+        flex-direction: column;
+    }
 }
